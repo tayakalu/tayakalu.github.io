@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html> 
 <head> 
-  <title>Learn Igbo</title> 
+  <title>My Portfolio</title> 
   <style> 
     /* CSS code for styling the website */ 
     body { 
@@ -14,13 +14,37 @@
     .container { 
       max-width: 800px; 
       margin: 0 auto; 
+      text-align: left; 
     } 
-    .vocabulary { 
+    .header { 
+      background-color: lightgray; 
+      padding: 20px; 
+    } 
+    .header h1 { 
+      margin-bottom: 10px; 
+    } 
+    .header p { 
+      font-size: 14px; 
+      margin-bottom: 20px; 
+    } 
+    .header a { 
+      background-color: navy; 
+      color: white; 
+      padding: 10px 20px; 
+      text-decoration: none; 
+      border-radius: 5px; 
+    } 
+    .header a:hover { 
+      background-color: white; 
+      color: navy; 
+    } 
+    .projects { 
       display: flex; 
       flex-wrap: wrap; 
       justify-content: center; 
+      margin-top: 40px; 
     } 
-    .vocabulary-card { 
+    .project { 
       width: 300px; 
       height: 200px; 
       background-color: lightgray; 
@@ -28,35 +52,31 @@
       padding: 20px; 
       text-align: left; 
     } 
-    .vocabulary-card h2 { 
+    .project h2 { 
       color: navy; 
       margin-bottom: 10px; 
+    } 
+    .project img { 
+      width: 100%; 
+      height: auto; 
+      margin-bottom: 20px; 
     } 
   </style> 
 </head> 
 <body> 
   <div class="container"> 
-    <h1>Learn Igbo</h1> 
-    <div class="vocabulary"> 
-      <!-- Sample vocabulary words --> 
-      <div class="vocabulary-card"> 
-        <h2>Hello</h2> 
-        <p>nnọọ</p> 
-      </div> 
-      <div class="vocabulary-card"> 
-        <h2>Goodbye</h2> 
-        <p>nyé</p> 
-      </div> 
-      <div class="vocabulary-card"> 
-        <h2>Thank you</h2> 
-        <p>dị mma</p> 
-      </div> 
+    <div class="header"> 
+      <h1>My Portfolio</h1> 
+      <p>Welcome to my portfolio website, showcasing my projects and skills.</p> 
+      <a href="#projects">See my work</a> 
     </div> 
-  </div> 
-  
-  <!-- JavaScript code for adding functionality --> 
-  <script> 
-    // Add logic to play audio pronunciation of vocabulary words 
-  </script> 
-</body> 
-</html> 
+    <div id="projects" class="projects"> 
+      <!-- Sample projects with placeholder images --> 
+      <div class="project"> 
+        <h2>Project 1</h2> 
+        <img src="https://via.placeholder.com/300x200" alt="Project 1 image"> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet, mauris at malesuada efficitur, dolor magna tempor ex, a pellentesque libero enim id libero.</p> 
+      </div> 
+      <div class="project"> 
+        <h2>Project 2</h2> 
+        <img src="https://via.placeholder.com/300x
